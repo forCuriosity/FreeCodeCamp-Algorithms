@@ -19,7 +19,7 @@ var largestNums = function (arrays) {
     }
     arraysOfBigBoys.push(lnum)
   }
-
+  console.log(arraysOfBigBoys)
   return arraysOfBigBoys;
 }
 
