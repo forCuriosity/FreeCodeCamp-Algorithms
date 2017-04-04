@@ -3,6 +3,7 @@ var app = express();
 
 var capsSentence = require('./myCode/title-case-a-sentence.js')('sHoRt AnD sToUt');
 var largestNums = require('./myCode/return-largest-numbers-in-arrays.js')([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+var adjacentElementsProduct = require('./codefights/lvl2AdjacentElementsProduct')([3, 6, -2, -5, 7, 3]);
 
 app.get('/', function (req, res) {
   res.send(
@@ -10,6 +11,8 @@ app.get('/', function (req, res) {
     '<h3>results from javascript alogrithem challenges:</h3><br><br>' +
     'Capitalize Just First Letter Of Each Word = ' + capsSentence + '<br>' +
     'Return largest number in each array = ' + largestNums + '<br>' +
+    'Code Fights<br>' +
+    'Return adjacentElementsProduct' + adjacentElementsProduct + '<br>' +
     're'
   );
 });
